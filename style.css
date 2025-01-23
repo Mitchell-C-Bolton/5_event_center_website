@@ -1,3 +1,4 @@
+/* global ---------------------------------------------------------------------------------------*/
 body{
     margin: 0;
     background-color: black;
@@ -11,6 +12,7 @@ nav{
 h1{
     text-align: center;
     color: #597bc5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #header-bar{
@@ -22,7 +24,7 @@ h1{
 #header-bar-white-space{
     background-color: white;
     width: 100%;
-    height: 94px;
+    height: 98px;
     position: absolute;
     z-index: -100;
 }
@@ -36,6 +38,7 @@ h1{
     margin: 0;
     font-size: larger;
     list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav_button{
@@ -48,6 +51,7 @@ h1{
     color: #597bc5;   
 }
 
+/* main -----------------------------------------------------------------------------------------*/
 #main-background{
     top: 0;
     left: 0;
@@ -61,10 +65,13 @@ h1{
 }
 
 #main-info{
-    color: white;
+    background: linear-gradient(to bottom right, #ffadad, #c2efff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
     text-align: center;
     padding: 3% 15% 0 15%;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main-title{
@@ -72,7 +79,7 @@ h1{
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-    margin: 3% 25% 0 25%;
+    margin: 3% 5% 0 5%;
     padding-bottom: 5px;
     font-size: 40px;
 }
@@ -80,4 +87,37 @@ h1{
 #main-content{
     padding-top: 50px;
     font-size: 20px;
+}
+
+/* events ---------------------------------------------------------------------------------------*/
+#event-links{
+    padding: 0;
+}
+
+.event{
+    display: flex;
+    height: 150px;
+    background-color: #CEADAD;
+    margin: 30px 5% 30px 5%;
+    justify-content: space-between;
+}
+
+#event-date, #event-time, #event-name, #event-description{
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#event-image{
+    margin-right: 20px; 
+}
+
+#event-date{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    min-width: 60px;
 }
