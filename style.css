@@ -1,7 +1,12 @@
 /* global ---------------------------------------------------------------------------------------*/
-body{
+#home-page{
     margin: 0;
     background-color: black;
+}
+
+body{
+    margin: 0;
+    background-color: #989898;
 }
 
 nav{
@@ -51,6 +56,10 @@ h1{
     color: #597bc5;   
 }
 
+.nav_button:active{
+    color:darkcyan
+}
+
 /* main -----------------------------------------------------------------------------------------*/
 #main-background{
     top: 0;
@@ -92,14 +101,21 @@ h1{
 /* events ---------------------------------------------------------------------------------------*/
 #event-links{
     padding: 0;
+    justify-self: center;
 }
 
 .event{
     display: flex;
     height: 150px;
-    background-color: #CEADAD;
+    background-color: white;
     margin: 30px 5% 30px 5%;
     justify-content: space-between;
+    max-width: 1200px;
+}
+
+.event:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 #event-date, #event-time, #event-name, #event-description{
@@ -120,4 +136,83 @@ h1{
     font-weight: bold;
     text-decoration: underline;
     min-width: 60px;
+}
+
+/* Location -------------------------------------------------------------------------------------*/
+#location-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#google-map{
+    padding: 20px;
+}
+
+#map-details{
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 376px;
+}
+
+#location-title{
+    justify-self: center;
+}
+
+.line {
+    border: 1px solid gray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Contact Us -----------------------------------------------------------------------------------*/
+#contact-us-form{
+    padding: 70px 10% 0px 10% ;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.survey-information{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    height: 390px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 55px;
+}
+
+textarea{
+    width: 98%;
+    height: 82%;
+    resize: none;
+}
+
+.survey-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#submit-button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+    
 }

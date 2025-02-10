@@ -36,31 +36,40 @@
         </nav>
     </header>
     <main>
-        <form action="#" method="POST">
-            <fieldset>
+        <form action="#" method="POST" id="contact-us-form">
+            <fieldset class="survey-information">
                 <legend>Personal Information</legend>
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
-                <br><br>
 
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
-                <br><br>
-            
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <br><br>
+                <div class="survey-field">
+                    <label for="first-name">First Name</label>
+                    <br>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="survey-field">
+                    <label for="last-name">Last Name</label>
+                    <br>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="survey-field">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="survey-field">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
             </fieldset>
 
-            <label for="feedback">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
-            <br><br>
-          
-            <input type="submit" value="Submit">
+            <fieldset class="survey-information">
+                <legend>Message</legend>
+
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                <br>
+                <input type="submit" value="Submit" id="submit-button">
+            </fieldset>
+
           </form>
     </main>
 
