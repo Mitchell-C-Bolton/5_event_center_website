@@ -4,9 +4,15 @@
     background-color: black;
 }
 
+main{
+    max-width: 2500px;
+    min-width: 350px;
+    justify-self: center;
+}
+
 body{
     margin: 0;
-    background-color: #989898;
+    background-color: #c8c8c8;
 }
 
 nav{
@@ -19,6 +25,8 @@ h1{
     color: #597bc5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 
 #header-bar{
     background-color: #A1B7BF;
@@ -39,8 +47,6 @@ h1{
     width: 100%;
     justify-content: right;
     align-items: center;
-    padding: 0;
-    margin: 0;
     font-size: larger;
     list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,7 +55,17 @@ h1{
 .nav_button{
     color: black;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: 0px;
+    padding-right: 20px;
+    border:  2px, solid, black;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-top: transparent;
+}
+
+#nav-links li:last-child .nav_button {
+    border-right: transparent;
 }
 
 .nav_button:hover {
@@ -80,7 +96,10 @@ h1{
     text-align: center;
     padding: 3% 15% 0 15%;
     justify-content: center;
+    justify-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 350px;
+    max-width: 900px;
 }
 
 #main-title{
@@ -111,6 +130,8 @@ h1{
     margin: 30px 5% 30px 5%;
     justify-content: space-between;
     max-width: 1200px;
+    min-width: 851px;
+    border-radius: 20px;
 }
 
 .event:hover{
@@ -125,6 +146,10 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: 100;
+}
+
+#event-description{
+    min-width: 172px;
 }
 
 #event-image{
@@ -147,6 +172,7 @@ h1{
 
 #google-map{
     padding: 20px;
+    border-radius: 50px;
 }
 
 #map-details{
@@ -170,8 +196,10 @@ h1{
     padding: 70px 10% 0px 10% ;
     display: flex;
     justify-content: center;
+    justify-self: center;
     flex-direction: row;
     align-items: center;
+    width: 900px;
 }
 
 .survey-information{
@@ -183,11 +211,11 @@ h1{
     height: 390px;
     background-color: #f9f9f9;
     text-align: center;
+    border-radius: 20px;
 }
 
 legend{
     text-align: center;
-    text-decoration: underline;
     font-weight: bolder;
     font-size: 20px;
     padding-top: 55px;
@@ -197,6 +225,7 @@ textarea{
     width: 98%;
     height: 82%;
     resize: none;
+    border-radius: 5px;
 }
 
 .survey-field{
@@ -211,8 +240,117 @@ textarea{
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     width: 80%;
     margin-top: 10px;
-    
+}
+
+/* Menu -----------------------------------------------------------------------------------------*/
+table{
+    padding: 30px;
+    display: flex;
+}
+
+td{
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#menu-title{
+    text-align: center;
+    padding: 30px;
+    font-family: Helvetica;
+    font-size: xx-large;
+}
+
+#menu{
+    display: flex;
+    background-color:antiquewhite;
+    border-radius: 50px;
+}
+
+.menu-section{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.food_image{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Phone Screens --------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    h1{
+        display: none;
+    }
+
+    #nav-links{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .nav_button{
+        border: transparent;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #header-bar-white-space{
+        height: 150px;
+        background-color: #A1B7BF;
+    }
+
+    #header-bar{
+        background-color: #A1B7BF;
+        width: 100%;
+        height: 0px;
+    }
+
+    .event{
+        flex-direction: column;
+        display: flex;
+        height: auto;
+        background-color: white;
+        margin: 20px 4% 20px 4%;
+        justify-content: start;
+        min-width: 275px;
+    }
+
+    #event-image{
+        display: none;
+    }
+
+    #event-date, #event-time, #event-name, #event-description{
+        margin: 10px;
+        padding: 0px;
+    }
+
+    #location-main{
+        flex-wrap: wrap;
+    }
+
+    #map-details{
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #google-map{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .line:last-of-type{
+        display: none;
+    }
+    #contact-us-form{
+        flex-direction: column;
+        padding-top: 0;
+        width: 350px;
+    }
 }
