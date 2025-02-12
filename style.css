@@ -348,9 +348,27 @@ td{
     .line:last-of-type{
         display: none;
     }
+
     #contact-us-form{
         flex-direction: column;
         padding-top: 0;
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+
+    td{
+        padding: 10px 0px;
+    }
+
+    #menu{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .food-details{
+        display: block;
+        text-align: left;
     }
 }
